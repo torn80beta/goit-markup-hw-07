@@ -488,7 +488,12 @@ img {
   color: #2196F3;
 }
 
-.overlay {
+.hero {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.hero__overlay {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -504,12 +509,7 @@ img {
   background-repeat: no-repeat;
 }
 
-.section.hero {
-  margin: 0 auto;
-  padding: 0;
-}
-
-.hero-text {
+.hero__text {
   max-width: 696px;
   margin-top: 0;
   margin-bottom: 30px;
