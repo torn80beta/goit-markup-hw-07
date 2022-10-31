@@ -1,9 +1,9 @@
-.page-header {
+.header {
     border: 1px solid $header-border;
 }
 
 .container {
-    &.nav {
+    &.header__nav {
         flex-direction: row;
     }
 }
@@ -14,14 +14,12 @@
     margin-left: 93px;
 }
 
-.contacts {
-    .item+.item {
-            margin-left: 30px;
-        }
+.contacts__item + .contacts__item {
+    margin-left: 30px;
 }
 
-.site-nav .link,
-.contacts .link {
+.site-nav__link,
+.contacts__link {
     display: flex;
     align-items: center;
     padding-top: 32px;
@@ -36,13 +34,13 @@
     transition: color 250ms $cubic-bezier-transition;
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus {
+.site-nav__link:hover,
+.site-nav__link:focus {
     color: $accent-color;
 }
 
-.contacts .link:hover,
-.contacts .link:focus {
+.contacts__link:hover,
+.contacts__link:focus {
     color: $accent-color;
 }
 
@@ -51,7 +49,7 @@
     margin-left: auto;
 }
 
-.contacts .link {
+.contacts__link {
     color: $primary-text-color;
 }
 
@@ -59,11 +57,11 @@
     display: flex;
 }
 
-.site-nav .item+.item {
+.site-nav__item + .site-nav__item {
     margin-left: 50px;
 }
 
-.contacts-icon {
+.contacts__icon {
     margin-right: 10px;
     fill: currentColor;
 }
@@ -72,27 +70,27 @@
 
 /* Contacts hover/focus effect START */
 
-.contacts .link:hover::after,
-.contacts .link:focus::after {
+.contacts__link:hover::after,
+.contacts__link:focus::after {
     opacity: 1;
     transform: scaleX(1);
 }
 
 /* Contacts hover/focus effect END */
 
-.site-nav .link,
-.contacts .link {
+.site-nav__link,
+.contacts__link {
     position: relative;
 }
 
-.site-nav .link:not(.current):hover::after,
-.site-nav .link:not(.current):focus::after {
+.site-nav__link:not(.current):hover::after,
+.site-nav__link:not(.current):focus::after {
     opacity: 1;
     transform: scaleX(1);
 }
 
-.site-nav .link:not(.current)::after,
-.contacts .link::after {
+.site-nav__link:not(.current)::after,
+.contacts__link::after {
     position: absolute;
     left: 0;
     bottom: -1px;
@@ -119,7 +117,7 @@
     border-radius: 2px;
 }
 
-.site-nav .link.current {
+.site-nav__link.current {
     position: relative;
     color: $accent-color;
 }
