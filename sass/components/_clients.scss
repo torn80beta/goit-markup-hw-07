@@ -1,10 +1,10 @@
-.clients-container {
+.clients__list {
     display: flex;
     justify-content: center;
     gap: $card-set-gap;
 }
 
-.clients {
+.clients_link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,8 +17,8 @@
     transition: border-color 250ms $cubic-bezier-transition, fill 250ms $cubic-bezier-transition;
 }
 
-.clients:hover,
-.clients:focus {
+.clients_link:hover,
+.clients_link:focus {
     fill: $accent-color;
     border-color: $accent-color;
 }

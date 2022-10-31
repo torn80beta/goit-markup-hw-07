@@ -727,7 +727,7 @@ img {
   fill: #ffffff;
 }
 
-.clients-container {
+.clients__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -737,7 +737,7 @@ img {
   gap: 30px;
 }
 
-.clients {
+.clients_link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -756,8 +756,8 @@ img {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients:hover,
-.clients:focus {
+.clients_link:hover,
+.clients_link:focus {
   fill: #2196F3;
   border-color: #2196F3;
 }
