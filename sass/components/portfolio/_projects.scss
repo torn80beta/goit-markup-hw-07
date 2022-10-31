@@ -1,0 +1,73 @@
+.projects-title {
+    margin-bottom: 4px;
+    color: $title-text-color;
+    font-size: 18px;
+    line-height: calc(36/18);
+    letter-spacing: 0.06em;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: -30px;
+    margin-right: -30px;
+    font-size: 16px;
+    line-height: calc(30/16);
+}
+
+.project-link {
+    display: block;
+    color: $primary-text-color;
+    text-decoration: none;
+
+    transition: box-shadow 250ms $cubic-bezier-transition;
+}
+
+.project-link:hover,
+.project-link:focus {
+    box-shadow: $portfolio-box-shadow;
+}
+
+.projects-element {
+    margin-right: 30px;
+    margin-bottom: 30px;
+    width: calc(100% / 3 - 30px);
+}
+
+.project-card-content {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+    border: 1px solid $cards-border-color;
+    border-top: 0;
+}
+
+/* Portfolio animations */
+
+.thumb {
+    position: relative;
+    overflow: hidden;
+}
+
+.project-link:hover .project-overlay,
+.project-link:focus .project-overlay {
+    transform: translateY(0)
+}
+
+.project-overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+
+    display: block;
+    padding: 63px 24px;
+
+    font-size: 18px;
+    line-height: calc(28/18);
+    color: $primary-light-color;
+    background-color: $portfolio-projects-overlay;
+
+    transform: translateY(100%);
+    transition: transform 250ms $cubic-bezier-transition;
+}

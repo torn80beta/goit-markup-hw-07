@@ -1,0 +1,64 @@
+.command {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.command-bg {
+    background-color: $background-light-color;
+}
+
+.command-card {
+    background-color: $primary-light-color;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: $command-card-shadow;
+}
+
+.card-content {
+    padding-top: $card-set-gap;
+    padding-bottom: $card-set-gap;
+}
+
+.command .item+.item {
+    margin-left: $card-set-gap;
+}
+
+.command-text {
+    text-align: center;
+    font-size: 16px;
+    line-height: calc(19/16);
+}
+
+.command-header {
+    margin-bottom: 10px;
+    color: $title-text-color;
+    font-weight: 500;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: $primary-light-color;
+    border-radius: 50%;
+    fill: $icons-fill-color;
+
+    transition: background-color 500ms $cubic-bezier-transition, fill 250ms $cubic-bezier-transition;
+}
+
+.social-link:hover,
+.social-link:focus {
+    background-color: $accent-color;
+    fill: $primary-light-color;
+}
+
+.social-links li+li {
+    margin-left: 10px;
+}
