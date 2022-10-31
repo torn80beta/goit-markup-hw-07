@@ -357,7 +357,7 @@ img {
   color: #000000;
 }
 
-.logo-white {
+.logo--white {
   color: #ffffff;
 }
 
@@ -784,16 +784,17 @@ img {
           align-items: baseline;
 }
 
-.footer-box.address {
+.footer__contacts {
   margin-right: 70px;
+  margin-top: 20px;
 }
 
-.footer-box.social {
+.footer__socials {
   margin-right: 93px;
 }
 
-.footer-box.social,
-.footer-box.form {
+.footer__socials,
+.subscription {
   color: #ffffff;
   font-size: 14px;
   line-height: 1.1428571429;
@@ -801,60 +802,56 @@ img {
   font-weight: bold;
 }
 
-.physical-address,
-.footer-link {
+.footer__physical,
+.footer__link {
   text-decoration: none;
   font-style: normal;
   font-size: 14px;
   line-height: 1.7142857143;
 }
 
-.physical-address {
+.footer__physical {
   width: 231px;
   display: inline-block;
   color: #ffffff;
 }
 
-.address-list {
-  margin-top: 20px;
-}
-
-.address-list ul li:not(:first-child) {
+.footer__contacts ul li:not(:first-child) {
   margin-top: 9px;
 }
 
-.footer-link {
+.footer__link {
   display: inline-block;
   color: rgba(255, 255, 255, 0.6);
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-link:hover,
-.footer-link:focus {
+.footer__link:hover,
+.footer__link:focus {
   color: #2196F3;
 }
 
-.social-links.dark {
+.social--dark {
   margin-top: 20px;
 }
 
-.social-link.dark {
+.social__link--dark {
   background: rgba(255, 255, 255, 0.1);
   fill: #ffffff;
 }
 
-.social-link.dark:hover,
-.social-link.dark:focus {
+.social__link--dark:hover,
+.social__link--dark:focus {
   background-color: #2196F3;
 }
 
-.mail-label {
+.subscription__label {
   display: block;
   margin-bottom: 20px;
 }
 
-.mail-box {
+.subscription__input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -870,7 +867,7 @@ img {
   background-color: #2F303A;
 }
 
-.footer-box .subscription-button {
+.footer__subscription-button {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -885,7 +882,7 @@ img {
   padding: 10px 28px;
 }
 
-.subscription-wrapper {
+.subscription__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
