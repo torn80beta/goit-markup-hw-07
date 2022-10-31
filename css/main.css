@@ -550,34 +550,34 @@ img {
   background-color: #188CE8;
 }
 
-.advantages-heder {
+.advantages__heder {
   font-size: 14px;
   line-height: 1.1428571429;
   text-transform: uppercase;
   color: #212121;
 }
 
-.advantages {
+.advantages__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.list.advantages p {
+.advantages__text {
   margin-top: 10px;
   font-size: 14px;
   line-height: 1.7142857143;
 }
 
-.list.advantages .item {
+.advantages__item {
   width: 270px;
 }
 
-.advantages .item + .item {
+.advantages__item + .advantages__item {
   margin-left: 30px;
 }
 
-.advantages-bg {
+.advantages__bg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

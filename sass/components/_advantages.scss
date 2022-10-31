@@ -1,29 +1,29 @@
-.advantages-heder {
+.advantages__heder {
     font-size: 14px;
     line-height: calc(16/14);
     text-transform: uppercase;
     color: $title-text-color;
 }
 
-.advantages {
+.advantages__list {
     display: flex;
 }
 
-.list.advantages p {
+.advantages__text {
     margin-top: 10px;
     font-size: 14px;
     line-height: calc(24/14);
 }
 
-.list.advantages .item {
+.advantages__item {
     width: 270px;
 }
 
-.advantages .item+.item {
+.advantages__item + .advantages__item {
     margin-left: $card-set-gap;
 }
 
-.advantages-bg {
+.advantages__bg {
     display: flex;
     justify-content: center;
     align-items: center;
