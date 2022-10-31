@@ -1,0 +1,25 @@
+.social {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.social__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: $primary-light-color;
+    border-radius: 50%;
+    fill: $icons-fill-color;
+
+    transition: background-color 500ms $cubic-bezier-transition, fill 250ms $cubic-bezier-transition;
+}
+
+.social__link:hover,
+.social__link:focus {
+    background-color: $accent-color;
+    fill: $primary-light-color;
+}
+

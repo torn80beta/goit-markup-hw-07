@@ -336,6 +336,14 @@ img {
   padding-bottom: 94px;
 }
 
+.title {
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 36px;
+  line-height: 1.1666666667;
+  color: #212121;
+}
+
 .logo {
   font-family: Raleway, sans-serif;
   color: #2196F3;
@@ -598,14 +606,6 @@ img {
   padding-top: 0;
 }
 
-.specialization__title {
-  margin-bottom: 50px;
-  text-align: center;
-  font-size: 36px;
-  line-height: 1.1666666667;
-  color: #212121;
-}
-
 .specialization__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -648,7 +648,7 @@ img {
   color: #ffffff;
 }
 
-.command {
+.command__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -656,39 +656,43 @@ img {
       flex-wrap: wrap;
 }
 
-.command-bg {
+.command__bg {
   background-color: #F5F4FA;
 }
 
-.command-card {
+.card {
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.card-content {
+.card__content {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.command .item + .item {
+.command__item + .command__item {
   margin-left: 30px;
 }
 
-.command-text {
-  text-align: center;
-  font-size: 16px;
-  line-height: 1.1875;
-}
-
-.command-header {
+.card__person {
   margin-bottom: 10px;
   color: #212121;
   font-weight: 500;
 }
 
-.social-links {
+.card__text {
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.1875;
+}
+
+.social li + li {
+  margin-left: 10px;
+}
+
+.social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -698,7 +702,7 @@ img {
   margin-top: 16px;
 }
 
-.social-link {
+.social__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -717,14 +721,10 @@ img {
   transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-link:hover,
-.social-link:focus {
+.social__link:hover,
+.social__link:focus {
   background-color: #2196F3;
   fill: #ffffff;
-}
-
-.social-links li + li {
-  margin-left: 10px;
 }
 
 .clients-container {
