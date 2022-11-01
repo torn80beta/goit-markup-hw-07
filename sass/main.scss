@@ -3,16 +3,16 @@
 @import './utils/drops';
 @import './utils/body';
 @import './components/shared/logo';
-@import './components/header';
-@import './components/hero';
+@import './components/shared/header';
+@import './components/index/hero';
 @import './components/shared/button';
-@import './components/advantages';
-@import './components/specialization';
-@import './components/command';
+@import './components/index/advantages';
+@import './components/index/specialization';
+@import './components/index/command';
 @import './components/shared/social';
-@import './components/clients';
-@import './components/footer';
-@import './components/modal';
+@import './components/index/clients';
+@import './components/shared/footer';
+@import './components/index/modal';
 @import './components/portfolio/filter';
 @import './components/portfolio/projects';
 
