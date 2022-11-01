@@ -1126,14 +1126,6 @@ img {
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.projects-title {
-  margin-bottom: 4px;
-  color: #212121;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-}
-
 .projects {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1146,7 +1138,15 @@ img {
   line-height: 1.875;
 }
 
-.project-link {
+.project__title {
+  margin-bottom: 4px;
+  color: #212121;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.project__link {
   display: block;
   color: #757575;
   text-decoration: none;
@@ -1156,19 +1156,19 @@ img {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.project-link:hover,
-.project-link:focus {
+.project__link:hover,
+.project__link:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.projects-element {
+.project {
   margin-right: 30px;
   margin-bottom: 30px;
   width: calc(33.3333333333% - 30px);
 }
 
-.project-card-content {
+.project__content {
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
@@ -1178,18 +1178,18 @@ img {
 }
 
 /* Portfolio animations */
-.thumb {
+.project__thumb {
   position: relative;
   overflow: hidden;
 }
 
-.project-link:hover .project-overlay,
-.project-link:focus .project-overlay {
+.project__link:hover .project__overlay,
+.project__link:focus .project__overlay {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
 
-.project-overlay {
+.project__overlay {
   position: absolute;
   top: 0;
   width: 100%;
