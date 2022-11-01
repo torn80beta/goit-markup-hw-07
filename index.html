@@ -577,59 +577,61 @@
     <!-- Модалка -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="close-button" data-modal-close>
+        <button class="modal__close-button" data-modal-close>
           <svg width="30" height="30">
             <use href="./images/icons.svg#close-button"></use>
           </svg>
         </button>
         <form
+          class="subscription-form"
           name="subscription-form"
           autocomplete="off"
           method="POST"
           action="javascript:void(0);"
         >
-          <p class="form-title">Залиште свої дані, ми вам передзвонимо</p>
-          <label class="form-label" for="name">Ім'я</label>
-          <div class="form-field">
-            <input class="input-box" type="text" name="name" id="name" />
-            <svg class="form-icon" width="12" height="12">
+          <p class="subscription-form__title">Залиште свої дані, ми вам передзвонимо</p>
+          <label class="subscription-form__label" for="name">Ім'я</label>
+          <div class="subscription-form__field">
+            <input class="subscription-form__input" type="text" name="name" id="name" />
+            <svg class="subscription-form__icon" width="12" height="12">
               <use href="./images/icons.svg#person"></use>
             </svg>
           </div>
-          <label class="form-label" for="phone">Телефон</label>
-          <div class="form-field">
-            <input class="input-box" type="tel" name="phone" id="phone" />
-            <svg class="form-icon" width="14" height="14">
+          <label class="subscription-form__label" for="phone">Телефон</label>
+          <div class="subscription-form__field">
+            <input class="subscription-form__input" type="tel" name="phone" id="phone" />
+            <svg class="subscription-form__icon" width="14" height="14">
               <use href="./images/icons.svg#phone"></use>
             </svg>
           </div>
-          <label class="form-label" for="mail">Пошта</label>
-          <div class="form-field">
-            <input class="input-box" type="email" name="mail" id="mail" />
-            <svg class="form-icon" width="16" height="12">
+          <label class="subscription-form__label" for="mail">Пошта</label>
+          <div class="subscription-form__field">
+            <input class="subscription-form__input" type="email" name="mail" id="mail" />
+            <svg class="subscription-form__icon" width="16" height="12">
               <use href="./images/icons.svg#email"></use>
             </svg>
           </div>
-          <label class="form-label" for="comment">Коментар</label>
-          <div class="form-field comment">
+          <label class="subscription-form__label" for="comment">Коментар</label>
+          <div class="subscription-form__field subscription-form__field--bottom">
             <textarea
-              class="input-box comment"
+              class="subscription-form__input subscription-form__comment"
               name="comment"
               id="comment"
               placeholder="Введіть текст"
             ></textarea>
           </div>
-          <div class="agreement">
-            <label class="license" for="license">
+          <div class="subscription-form__agreement">
+            <label class="subscription-form__license" for="license">
               <input
-                class="checkbox visually-hidden"
+                class="subscription-form__checkbox visually-hidden"
                 type="checkbox"
                 name="license"
                 id="license"
                 value="agreed"
               />
-              <span class="checkbox-icon"></span>
-              Погоджуюся з розсилкою та приймаю <a class="policy" href="">Умови договору</a>
+              <span class="subscription-form__checkbox-icon"></span>
+              Погоджуюся з розсилкою та приймаю
+              <a class="subscription-form__policy" href="">Умови договору</a>
             </label>
           </div>
           <button class="button subscription-button" type="submit">Відправити</button>
