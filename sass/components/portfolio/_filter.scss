@@ -1,10 +1,10 @@
-.filter-container {
+.filter {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
 }
 
-.filter-button {
+.filter__button {
     min-width: 73px;
     padding: 6px 22px;
     font-weight: 500;
@@ -21,16 +21,16 @@
         box-shadow 250ms $cubic-bezier-transition;
 }
 
-.filter-container .item:first-child .filter-button {
+.filter .filter__item:first-child .filter__button {
     padding: 6px 25px;
 }
 
-.filter-container .item+.item {
+.filter .filter__item + .filter__item {
     margin-left: 8px;
 }
 
-.filter-button:hover,
-.filter-button:focus {
+.filter__button:hover,
+.filter__button:focus {
     background-color: $accent-color;
     color: $primary-light-color;
     box-shadow: $button-shadow;

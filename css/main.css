@@ -1083,7 +1083,7 @@ img {
   color: #2196F3;
 }
 
-.filter-container {
+.filter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1093,7 +1093,7 @@ img {
   margin-bottom: 50px;
 }
 
-.filter-button {
+.filter__button {
   min-width: 73px;
   padding: 6px 22px;
   font-weight: 500;
@@ -1110,16 +1110,16 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.filter-container .item:first-child .filter-button {
+.filter .filter__item:first-child .filter__button {
   padding: 6px 25px;
 }
 
-.filter-container .item + .item {
+.filter .filter__item + .filter__item {
   margin-left: 8px;
 }
 
-.filter-button:hover,
-.filter-button:focus {
+.filter__button:hover,
+.filter__button:focus {
   background-color: #2196F3;
   color: #ffffff;
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
