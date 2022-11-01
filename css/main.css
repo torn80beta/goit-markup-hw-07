@@ -567,7 +567,6 @@ img {
 .advantages__item {
   width: 270px;
 }
-
 .advantages__item + .advantages__item {
   margin-left: 30px;
 }
@@ -601,12 +600,11 @@ img {
       flex-wrap: wrap;
 }
 
-.specialization__item + .specialization__item {
-  margin-left: 30px;
-}
-
 .specialization__item {
   position: relative;
+}
+.specialization__item + .specialization__item {
+  margin-left: 30px;
 }
 
 .specialization__overlay {
@@ -627,7 +625,7 @@ img {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-.specialization__overlay-text {
+.specialization__text {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.1428571429;
@@ -647,6 +645,10 @@ img {
   background-color: #F5F4FA;
 }
 
+.command__item + .command__item {
+  margin-left: 30px;
+}
+
 .card {
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
@@ -657,10 +659,6 @@ img {
 .card__content {
   padding-top: 30px;
   padding-bottom: 30px;
-}
-
-.command__item + .command__item {
-  margin-left: 30px;
 }
 
 .card__person {
@@ -742,9 +740,7 @@ img {
   -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.clients_link:hover,
-.clients_link:focus {
+.clients_link:hover, .clients_link:focus {
   fill: #2196F3;
   border-color: #2196F3;
 }
@@ -757,7 +753,6 @@ img {
   padding-bottom: 60px;
   background-color: #2F303A;
 }
-
 .footer .container {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -774,6 +769,9 @@ img {
 .footer__contacts {
   margin-right: 70px;
   margin-top: 20px;
+}
+.footer__contacts ul li:not(:first-child) {
+  margin-top: 9px;
 }
 
 .footer__socials {
@@ -803,19 +801,13 @@ img {
   color: #ffffff;
 }
 
-.footer__contacts ul li:not(:first-child) {
-  margin-top: 9px;
-}
-
 .footer__link {
   display: inline-block;
   color: rgba(255, 255, 255, 0.6);
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.footer__link:hover,
-.footer__link:focus {
+.footer__link:hover, .footer__link:focus {
   color: #2196F3;
 }
 
@@ -827,9 +819,7 @@ img {
   background: rgba(255, 255, 255, 0.1);
   fill: #ffffff;
 }
-
-.social__link--dark:hover,
-.social__link--dark:focus {
+.social__link--dark:hover, .social__link--dark:focus {
   background-color: #2196F3;
 }
 
@@ -886,13 +876,11 @@ img {
   -webkit-transition: opacity 400ms cubic-bezier(0.4, 0, 0.2, 1), visibility 400ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 400ms cubic-bezier(0.4, 0, 0.2, 1), visibility 400ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
 }
-
 .backdrop.is-hidden .modal {
   -webkit-transform: translateX(-50%) scale(0.1);
           transform: translateX(-50%) scale(0.1);
@@ -933,7 +921,6 @@ img {
   cursor: pointer;
   fill: #000000;
 }
-
 .modal__close-button:hover {
   fill: #2196F3;
 }
@@ -958,19 +945,10 @@ img {
   color: #757575;
 }
 
-.modal .button {
-  display: block;
-  min-width: 200px;
-  margin: 0 auto;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-
 .subscription-form__field {
   position: relative;
   margin-bottom: 10px;
 }
-
 .subscription-form__field--bottom {
   margin-bottom: 20px;
 }
@@ -987,22 +965,19 @@ img {
   -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.subscription-form__input:focus-within {
+  border: 1px solid #2196F3;
+  outline: none;
+}
+.subscription-form__input:focus-within + .subscription-form__icon {
+  fill: #2196F3;
+}
 
 .subscription-form__comment {
   padding: 12px 16px;
   height: 120px;
   resize: none;
 }
-
-.subscription-form__input:focus-within {
-  border: 1px solid #2196F3;
-  outline: none;
-}
-
-.subscription-form__input:focus-within + .subscription-form__icon {
-  fill: #2196F3;
-}
-
 .subscription-form__comment:not(:focus-within) {
   font-size: 12px;
   line-height: 1.1666666667;
@@ -1030,7 +1005,6 @@ img {
 .subscription-form__checkbox:focus + .subscription-form__checkbox-icon {
   outline: 1px solid #2196F3;
 }
-
 .subscription-form__checkbox:checked + .subscription-form__checkbox-icon {
   border-color: #2196F3;
   background-color: #2196F3;
@@ -1068,6 +1042,14 @@ img {
 
 .subscription-form__policy {
   color: #2196F3;
+}
+
+.modal__button {
+  display: block;
+  min-width: 200px;
+  margin: 0 auto;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .filter {

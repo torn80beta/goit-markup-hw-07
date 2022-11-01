@@ -7,12 +7,11 @@
     flex-wrap: wrap;
 }
 
-.specialization__item + .specialization__item {
-    margin-left: $card-set-gap;
-}
-
 .specialization__item {
     position: relative;
+    & + .specialization__item {
+        margin-left: $card-set-gap;
+    }
 
 }
 
@@ -28,7 +27,7 @@
     background-color: rgba(47, 48, 58, 0.8);
 }
 
-.specialization__overlay-text {
+.specialization__text {
     font-weight: 700;
     font-size: 14px;
     line-height: calc(16/14);

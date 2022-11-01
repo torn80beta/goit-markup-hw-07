@@ -15,10 +15,9 @@
     fill: $icons-fill-color;
 
     transition: border-color 250ms $cubic-bezier-transition, fill 250ms $cubic-bezier-transition;
-}
-
-.clients_link:hover,
-.clients_link:focus {
-    fill: $accent-color;
-    border-color: $accent-color;
+    &:hover,
+    &:focus {
+        fill: $accent-color;
+        border-color: $accent-color;
+    }
 }

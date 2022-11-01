@@ -3,17 +3,20 @@
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: $background-dark-color;
+    & .container {
+        flex-direction: row;
+        align-items: flex-start;
+        align-items: baseline;
+    }
 }
 
-.footer .container {
-    flex-direction: row;
-    align-items: flex-start;
-    align-items: baseline;
-}
 
 .footer__contacts {
     margin-right: 70px;
     margin-top: 20px;
+    & ul li:not(:first-child) {
+        margin-top: 9px;
+    }
 }
 
 .footer__socials {
@@ -43,20 +46,16 @@
     color: $primary-light-color;
 }
 
-.footer__contacts ul li:not(:first-child) {
-    margin-top: 9px;
-}
-
 .footer__link {
     display: inline-block;
     color: $footer-link-color;
 
     transition: color 250ms $cubic-bezier-transition;
-}
 
-.footer__link:hover,
-.footer__link:focus {
-    color: $accent-color;
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
 }
 
 .social--dark {
@@ -66,11 +65,10 @@
 .social__link--dark {
     background: $dark-social-bg;
     fill: $primary-light-color;
-}
-
-.social__link--dark:hover,
-.social__link--dark:focus {
-    background-color: $accent-color;
+    &:hover,
+    &:focus {
+        background-color: $accent-color;
+    }
 }
 
 .subscription__label {
