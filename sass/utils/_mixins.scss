@@ -1,3 +1,23 @@
+@mixin logo($color: $accent-color,
+    $header-color: $black-color,
+    $footer-color: $primary-light-color) {
+        
+        font-family: Raleway, sans-serif;
+        color: $color;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: calc(31/26);
+
+        .logo--black {
+            color: $header-color;
+        }
+
+        .logo--white {
+            color: $footer-color;
+        }
+}
+
 @mixin subscription-button($color: $primary-light-color,
     $background-color: $accent-color,
     $hover-focus-color: $background-accent-color) {

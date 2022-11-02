@@ -352,12 +352,10 @@ img {
   font-size: 26px;
   line-height: 1.1923076923;
 }
-
-.logo--black {
+.logo .logo--black {
   color: #000000;
 }
-
-.logo--white {
+.logo .logo--white {
   color: #ffffff;
 }
 
