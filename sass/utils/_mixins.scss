@@ -1,0 +1,12 @@
+@mixin subscription-button($color: $primary-light-color,
+    $background-color: $accent-color,
+    $hover-focus-color: $background-accent-color) {
+
+        color: $color;
+        background-color: $background-color;
+        
+        &:hover,
+        &:focus {
+            background-color: $hover-focus-color;
+        }
+}
