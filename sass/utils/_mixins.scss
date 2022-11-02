@@ -4,9 +4,25 @@
 
         color: $color;
         background-color: $background-color;
-        
+
         &:hover,
         &:focus {
             background-color: $hover-focus-color;
         }
 }
+
+@mixin filter-button($color: $title-text-color,
+    $background-color: $background-light-color,
+    $hover-focus-color: $primary-light-color,
+    $hover-focus-background-color: $accent-color) {
+        
+        color: $color;
+        background-color: $background-color;
+
+        &:hover,
+        &:focus {
+            color: $hover-focus-color;
+            background-color: $hover-focus-background-color;
+            box-shadow: $button-shadow;
+        }
+    }
