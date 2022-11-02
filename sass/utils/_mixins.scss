@@ -1,7 +1,7 @@
 @mixin logo($color: $accent-color,
     $header-color: $black-color,
     $footer-color: $primary-light-color) {
-        
+
         font-family: Raleway, sans-serif;
         color: $color;
         text-decoration: none;
@@ -46,3 +46,18 @@
             box-shadow: $button-shadow;
         }
     }
+
+@mixin social-link($fill-color: $icons-fill-color,
+    $background-color: $primary-light-color,
+    $hover-focus-fill-color: $primary-light-color,
+    $hover-focus-background-color: $accent-color) {
+        
+        background-color: $background-color;
+        fill: $fill-color;
+    
+        &:hover,
+        &:focus {
+            background-color: $hover-focus-background-color;
+            fill: $hover-focus-fill-color;
+        }
+}

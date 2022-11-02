@@ -63,12 +63,8 @@
 }
 
 .social__link--dark {
-    background: $dark-social-bg;
-    fill: $primary-light-color;
-    &:hover,
-    &:focus {
-        background-color: $accent-color;
-    }
+    @include social-link($fill-color: $primary-light-color,
+        $background-color: $dark-social-bg)
 }
 
 .subscription__label {
