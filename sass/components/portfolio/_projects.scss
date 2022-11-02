@@ -7,6 +7,12 @@
     line-height: calc(30/16);
 }
 
+.project {
+    margin-right: 30px;
+    margin-bottom: 30px;
+    width: calc(100% / 3 - 30px);
+}
+
 .project__title {
     margin-bottom: 4px;
     color: $title-text-color;
@@ -21,17 +27,11 @@
     text-decoration: none;
 
     transition: box-shadow 250ms $cubic-bezier-transition;
-}
 
-.project__link:hover,
-.project__link:focus {
-    box-shadow: $portfolio-box-shadow;
-}
-
-.project {
-    margin-right: 30px;
-    margin-bottom: 30px;
-    width: calc(100% / 3 - 30px);
+    &:hover,
+    &:focus {
+        box-shadow: $portfolio-box-shadow;
+    }
 }
 
 .project__content {
@@ -50,11 +50,6 @@
     overflow: hidden;
 }
 
-.project__link:hover .project__overlay,
-.project__link:focus .project__overlay {
-    transform: translateY(0)
-}
-
 .project__overlay {
     position: absolute;
     top: 0;
@@ -70,4 +65,9 @@
 
     transform: translateY(100%);
     transition: transform 250ms $cubic-bezier-transition;
+
+    .project__link:hover &,
+    .project__link:focus & {
+        transform: translateY(0)
+    }
 }

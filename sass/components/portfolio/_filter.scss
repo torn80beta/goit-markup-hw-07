@@ -19,19 +19,19 @@
     transition: color 250ms $cubic-bezier-transition,
         background-color 250ms $cubic-bezier-transition,
         box-shadow 250ms $cubic-bezier-transition;
+
+    .filter__item:first-child & {
+        padding: 6px 25px;
+    }
+    
+    &:hover,
+    &:focus {
+        background-color: $accent-color;
+        color: $primary-light-color;
+        box-shadow: $button-shadow;
+    }
 }
 
-.filter .filter__item:first-child .filter__button {
-    padding: 6px 25px;
-}
-
-.filter .filter__item + .filter__item {
+.filter__item + .filter__item {
     margin-left: 8px;
-}
-
-.filter__button:hover,
-.filter__button:focus {
-    background-color: $accent-color;
-    color: $primary-light-color;
-    box-shadow: $button-shadow;
 }
