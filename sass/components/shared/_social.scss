@@ -15,11 +15,9 @@
     fill: $icons-fill-color;
 
     transition: background-color 500ms $cubic-bezier-transition, fill 250ms $cubic-bezier-transition;
+    &:hover,
+    &:focus {
+        background-color: $accent-color;
+        fill: $primary-light-color;
+    }
 }
-
-.social__link:hover,
-.social__link:focus {
-    background-color: $accent-color;
-    fill: $primary-light-color;
-}
-

@@ -17,9 +17,9 @@
     color: $primary-light-color;
 
     transition: background-color 250ms $cubic-bezier-transition;
-}
 
-.subscription-button:hover,
-.subscription-button:focus {
-    background-color: $background-accent-color;
+    &:hover,
+    &:focus {
+        background-color: $background-accent-color;
+    }
 }
