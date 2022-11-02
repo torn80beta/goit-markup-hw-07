@@ -5,14 +5,5 @@
 }
 
 .social__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-
-    transition: background-color 500ms $cubic-bezier-transition, fill 250ms $cubic-bezier-transition;
-
     @include social-link()
 }
